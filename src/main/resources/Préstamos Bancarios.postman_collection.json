@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "faa3e2c1-1db1-4256-87f3-ad3c7ed5cd99",
+		"name": "Préstamos Bancarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35163746"
+	},
+	"item": [
+		{
+			"name": "Prestamos",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/solicitudes-prestamo/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitudes-prestamo",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/solicitudes-prestamo/solicitud/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitudes-prestamo",
+								"solicitud",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Estado",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/solicitudes-prestamo/actualizar-estado/1?estado=aprobada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitudes-prestamo",
+								"actualizar-estado",
+								"1"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "aprobada"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nombreSolicitante\": \"Natalia Zg\",\r\n    \"importeSolicitado\": 58.60,\r\n    \"divisa\": \"EUR\",\r\n    \"documentoIdentidad\": \"12345678A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/solicitudes-prestamo/crear-solicitud",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitudes-prestamo",
+								"crear-solicitud"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/solicitudes-prestamo/delete-solicitud/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitudes-prestamo",
+								"delete-solicitud",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
