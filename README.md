@@ -27,9 +27,8 @@ El proyecto sigue una arquitectura en capas para su futuro escalado y organizaci
 - exception       → Manejo global de errores
 - mapper          → Conversión Entity ↔ DTO (MapStruct)
 - repository      → Acceso a datos (JPA / H2)
-- service
-    serviceImpl   → Lógica de negocio
-  PrestamosBancariosAppApplication
+- service // serviceImpl  → Lógica de negocio
+- PrestamosBancariosAppApplication
 
 ## Tecnologías utilizadas
 
