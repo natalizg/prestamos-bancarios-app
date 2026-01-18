@@ -19,17 +19,17 @@ Permite crear solicitudes, consultar su historial y modificar su estado siguiend
 El proyecto sigue una arquitectura en capas para su futuro escalado y organización clara:
 
 ### Estructura de paquetes
-│
-├── controller        → Endpoints REST
-├── domain            → Entidades del dominio
-├── dto               → Objetos de transferencia de datos
-├── enums             → Estados del préstamo
-├── exception         → Manejo global de errores
-├── mapper            → Conversión Entity ↔ DTO (MapStruct)
-├── repository        → Acceso a datos (JPA / H2)
-├── service
-│   └── serviceImpl   → Lógica de negocio
-└── PrestamosBancariosAppApplication
+
+- controller      → Endpoints REST
+- domain          → Entidades del dominio
+- dto             → Objetos de transferencia de datos
+- enums           → Estados del préstamo
+- exception       → Manejo global de errores
+- mapper          → Conversión Entity ↔ DTO (MapStruct)
+- repository      → Acceso a datos (JPA / H2)
+- service
+    serviceImpl   → Lógica de negocio
+  PrestamosBancariosAppApplication
 
 ## Tecnologías utilizadas
 
