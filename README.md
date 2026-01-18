@@ -54,15 +54,6 @@ El proyecto sigue una arquitectura en capas para su futuro escalado y organizaci
 Se incluye una colección de Postman dentro de la carpeta _resources_: Préstamos Bancarios.postman_collection.json
 
 
-Con ella se pueden probar:
-
-Creación de solicitudes
-
-Consulta de solicitudes
-
-Cambio de estado
-
-
 ## Posibles mejoras y extensiones
 
 Con más tiempo, se podrían implementar las siguientes mejoras:
