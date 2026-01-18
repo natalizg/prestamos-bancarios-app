@@ -48,9 +48,6 @@ El proyecto sigue una arquitectura en capas para su futuro escalado y organizaci
 - Java 17 o superior
 - Maven 3+
 - Puerto http://localhost:8080 libre
-🚀 Ejecución
-mvn clean install
-mvn spring-boot:run
 
 > Pruebas
 
